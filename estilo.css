@@ -1,0 +1,129 @@
+div#total {
+    width: 95%;
+    max-width: 980px;
+    height: auto;
+    margin: auto;
+    /*centraliza a divisão na página*/
+}
+
+header#topo {
+    width: 100%;
+    /*lembrando que ele está dentro do total*/
+    height: auto;
+    float: left;
+    /*background-color: yellow;*/
+
+}
+
+figure#logotipo {
+    width: 204px;
+    height: 84px;
+    margin: 20px auto;
+    /*topo - direita - inferior - esquerda*/
+}
+
+nav#menu {
+    width: 100%;
+    height: 40px;
+    background-color: #111;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav#menu a {
+    color: #FFF;
+    font-size: 16px;
+    line-height: 40px;
+    /* centraliza na vertical*/
+    text-decoration: none;
+    margin: 0 25px;
+    text-transform: uppercase;
+}
+
+nav#menu a:hover {
+    text-decoration: underline;
+}
+
+figure#banner {
+    width: 100%;
+    height: auto;
+    float: left;
+    /*margin-left: 0px;
+    margin-top: 5px;*/
+    margin: 5px 0 0 0;
+    /* topo direita inferior esquerda*/
+
+}
+
+figure#banner img {
+    width: 100%;
+}
+
+article#conteudo {
+    width: 60%;
+    float: left;
+}
+
+aside#coluna {
+    width: 35%;
+    float: right;
+}
+
+footer#rodape {
+    width: 100%;
+    height: 30px;
+    float: left;
+    background-color: black;
+    text-align: center;
+    color: #FFF;
+    line-height: 30px;
+}
+
+div#anunciotablet {
+    width: 100%;
+    float: left;
+    background-color: #F60;
+    text-align: center;
+    padding: 5px 0;
+    display: none;
+
+}
+
+/*MÉDIA QUERY - CSS3*/
+@media screen and (min-width:600px) and (max-width:800px) {
+    div#anunciotablet {
+        display: block;
+    }
+    
+    nav#menu a {
+        margin: 0px 15px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    nav#menu{
+        height: auto;
+    }
+    nav#menu a{
+        display: block;
+        border-bottom: 1px solid #CCC;
+    }
+    div#logotipo, div#logotipo img{
+        width: 150px;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    article#conteudo, aside#coluna{
+        width: 100%;
+
+    }
+    figure#banner, figure#banner img{
+        display: none;
+    }
+    
+}
+
